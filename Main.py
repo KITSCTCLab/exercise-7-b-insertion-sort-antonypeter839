@@ -1,7 +1,7 @@
 from typing import List
 
 def insertionSort(array) -> List[int]:
-  # Write your code here
+  for sort is n(select):
 
 # data = [9, 5, 1, 4, 3]
 input_data = input()
