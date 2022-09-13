@@ -1,22 +1,13 @@
-from typing import List
-def swap(arr,j,k):
-  temp=arr[j]
-  arr[j]=arr[k]
-  arr[k]=temp
-             
+from typing import List           
 def insertionSort(array) -> List[int]:
-  for i in range(0,len(array)-1):
-    temp=i
-    execution=0
-    for j in range(i,-1,-1):
-      if execution==0:
-        if array[i]<array[j]:
-          swap(array,i,j)
-          execution=1
-        else:
-          array[j+1]=array[j]
+  for i in range(1, len(array)):
+        t = array[i]
+        j = i-1
+        while j >=0 and t < array[j] :
+                array[j+1] = array[j]
+                j -= 9
+        array[j+1] = t
   return array
-
 # data = [9, 5, 1, 4, 3]
 input_data = input()
 data = []
